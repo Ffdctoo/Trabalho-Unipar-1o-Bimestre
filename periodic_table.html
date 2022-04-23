@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<style>
+  /*#####################################-TABLE-STYLE-##############################################*/
+
+  td,
+  tr {
+    border-width: 3px;
+    border-style: solid;
+    border-color: gray;
+  }
+  table {
+    margin-top: 50px;
+    color: white;
+  }
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: -2px;
+  }
+  td {
+    font-size: 14.5px;
+  }
+  .empty {
+    border-style: none;
+  }
+  tr:nth-child(1),
+  tr:nth-child(2),
+  tr:nth-child(3),
+  tr:nth-child(9) {
+    border-style: none;
+  }
+  td:nth-child() {
+    border-style: none;
+  }
+
+  /*#####################################-ELEMENT-COLORS-##############################################*/
+
+  .darkblue {
+    background-color: darkblue;
+    border-color: darkblue;
+  }
+  .darkgreen {
+    background-color: darkgreen;
+    border-color: darkgreen;
+  }
+  .darkred {
+    background-color: darkred;
+    border-color: darkred;
+  }
+  .yellow {
+    background-color: rgb(205, 164, 0);
+    border-color: rgb(205, 164, 0);
+  }
+  .purple {
+    background-color: purple;
+    border-color: purple;
+  }
+  .blue {
+    background-color: blue;
+    border-color: blue;
+  }
+  .orange {
+    background-color: orangered;
+    border-color: orangered;
+  }
+  .gray {
+    background-color: darkslategray;
+    border-color: darkslategray;
+  }
+</style>
+
+<!--#####################################-CSS-HTML-SEPARATOR-##########################################-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tabela Periódica</title>
+  </head>
+  <table id="table">
+    <!--#################################-FIRST-ROW-###################################-->
+    <tr>
+      <td class="darkblue">
+        1
+        <h2>H</h2>
+        Hydrogen
+      </td>
+      <td class="empty" colspan="17"></td>
+      <td class="darkred">
+        2
+        <h2>He</h2>
+        Helium
+      </td>
+    </tr>
+    <!--#################################-SECOND-ROW-###################################-->
+    <tr>
+      <td class="darkgreen">
+        3
+        <h2>Li</h2>
+        Lithium
+      </td>
+      <td class="darkred">
+        4
+        <h2>Be</h2>
+        Beryllium
+      </td>
+      <td class="empty" colspan="11"></td>
+      <td class="yellow">
+        5
+        <h2>B</h2>
+        Boron
+      </td>
+      <td class="darkblue">
+        6
+        <h2>C</h2>
+        Carbon
+      </td>
+      <td class="darkblue">
+        7
+        <h2>N</h2>
+        Nitrogen
+      </td>
+      <td class="darkblue">
+        8
+        <h2>O</h2>
+        Oxygen
+      </td>
+      <td class="darkblue">
+        9
+        <h2>F</h2>
+        Fluorine
+      </td>
+      <td class="darkred">
+        10
+        <h2>Ne</h2>
+        Neon
+      </td>
+    </tr>
+    <!--#################################-THIRD-ROW-###################################-->
+    <tr>
+      <td class="darkgreen">
+        11
+        <h2>Na</h2>
+        Sodium
+      </td>
+      <td class="darkred">
+        12
+        <h2>Mg</h2>
+        Magnesium
+      </td>
+      <td class="empty" colspan="11"></td>
+      <td class="darkgreen">
+        13
+        <h2>Al</h2>
+        Aluminum
+      </td>
+      <td class="yellow">
+        14
+        <h2>Si</h2>
+        Silicon
+      </td>
+      <td class="darkblue">
+        15
+        <h2>P</h2>
+        Phosphorus
+      </td>
+      <td class="darkblue">
+        16
+        <h2>S</h2>
+        Sulfur
+      </td>
+      <td class="darkblue">
+        17
+        <h2>Cl</h2>
+        Chlorine
+      </td>
+      <td class="darkred">
+        18
+        <h2>Ar</h2>
+        Argon
+      </td>
+    </tr>
+    <!--#################################-FOURTH-ROW-###################################-->
+    <tr>
+      <td class="darkgreen">
+        19
+        <h2>K</h2>
+        Potassium
+      </td>
+      <td class="darkred">
+        20
+        <h2>Ca</h2>
+        Calcium
+      </td>
+      <td class="purple">
+        21
+        <h2>Sc</h2>
+        Scandium
+      </td>
+      <td class="empty" rowspan="7">&nbsp; &nbsp; &nbsp;</td>
+      <td class="purple">
+        22
+        <h2>Ti</h2>
+        Titanium
+      </td>
+      <td class="purple">
+        23
+        <h2>V</h2>
+        Vanadium
+      </td>
+      <td class="purple">
+        24
+        <h2>Cr</h2>
+        Chromium
+      </td>
+      <td class="purple">
+        25
+        <h2>Mn</h2>
+        Manganese
+      </td>
+      <td class="purple">
+        26
+        <h2>Fe</h2>
+        Iron
+      </td>
+      <td class="purple">
+        27
+        <h2>Co</h2>
+        Cobalt
+      </td>
+      <td class="purple">
+        28
+        <h2>Ni</h2>
+        Nickel
+      </td>
+      <td class="purple">
+        29
+        <h2>Cu</h2>
+        Copper
+      </td>
+      <td class="purple">
+        30
+        <h2>Zn</h2>
+        Zinc
+      </td>
+      <td class="darkgreen">
+        31
+        <h2>Ga</h2>
+        Gallium
+      </td>
+      <td class="yellow">
+        32
+        <h2>Ge</h2>
+        Germanium
+      </td>
+      <td class="yellow">
+        33
+        <h2>As</h2>
+        Arsenic
+      </td>
+      <td class="darkblue">
+        34
+        <h2>Se</h2>
+        Selenium
+      </td>
+      <td class="darkblue">
+        35
+        <h2>Br</h2>
+        Bromine
+      </td>
+      <td class="darkred">
+        36
+        <h2>Kr</h2>
+        Krypton
+      </td>
+    </tr>
+    <!--#################################-FIFTH-ROW-###################################-->
+    <tr>
+      <td class="darkgreen">
+        37
+        <h2>Rb</h2>
+        Rubidium
+      </td>
+      <td class="darkred">
+        38
+        <h2>Sr</h2>
+        Strontium
+      </td>
+      <td class="purple">
+        39
+        <h2>Y</h2>
+        Yttrium
+      </td>
+      <td class="purple">
+        40
+        <h2>Zr</h2>
+        Zirconium
+      </td>
+      <td class="purple">
+        41
+        <h2>Nb</h2>
+        Niobium
+      </td>
+      <td class="purple">
+        42
+        <h2>Mo</h2>
+        Molybdenum
+      </td>
+      <td class="purple">
+        43
+        <h2>Tc</h2>
+        Technetium
+      </td>
+      <td class="purple">
+        44
+        <h2>Ru</h2>
+        Ruthenium
+      </td>
+      <td class="purple">
+        45
+        <h2>Rh</h2>
+        Rhodium
+      </td>
+      <td class="purple">
+        46
+        <h2>Pd</h2>
+        Palladium
+      </td>
+      <td class="purple">
+        47
+        <h2>Ag</h2>
+        Silver
+      </td>
+      <td class="purple">
+        48
+        <h2>Cd</h2>
+        Cadmium
+      </td>
+      <td class="darkgreen">
+        49
+        <h2>In</h2>
+        Indium
+      </td>
+      <td class="darkgreen">
+        50
+        <h2>Sn</h2>
+        Tin
+      </td>
+      <td class="yellow">
+        51
+        <h2>Sb</h2>
+        Antimony
+      </td>
+      <td class="yellow">
+        52
+        <h2>Te</h2>
+        Tellurium
+      </td>
+      <td class="darkblue">
+        53
+        <h2>I</h2>
+        Iodine
+      </td>
+      <td class="darkred">
+        54
+        <h2>Xe</h2>
+        Xenon
+      </td>
+    </tr>
+    <!--#################################-SIXTH-ROW-###################################-->
+    <tr>
+      <td class="darkgreen">
+        55
+        <h2>Cs</h2>
+        Caesium
+      </td>
+      <td class="darkred">
+        56
+        <h2>Ba</h2>
+        Barium
+      </td>
+      <td class="blue">
+        57
+        <h2>La</h2>
+        Lathanum
+      </td>
+      <td class="purple">
+        72
+        <h2>Hf</h2>
+        Hafnium
+      </td>
+      <td class="purple">
+        73
+        <h2>Ta</h2>
+        Tantalum
+      </td>
+      <td class="purple">
+        74
+        <h2>W</h2>
+        Tungsten
+      </td>
+      <td class="purple">
+        75
+        <h2>Re</h2>
+        Rhenium
+      </td>
+      <td class="purple">
+        76
+        <h2>Os</h2>
+        Osmium
+      </td>
+      <td class="purple">
+        77
+        <h2>Ir</h2>
+        Iridium
+      </td>
+      <td class="purple">
+        78
+        <h2>Pt</h2>
+        Platinum
+      </td>
+      <td class="purple">
+        79
+        <h2>Au</h2>
+        Gold
+      </td>
+      <td class="purple">
+        80
+        <h2>Hg</h2>
+        Mercury
+      </td>
+      <td class="darkgreen">
+        81
+        <h2>Tl</h2>
+        Thallium
+      </td>
+      <td class="darkgreen">
+        82
+        <h2>Pb</h2>
+        Lead
+      </td>
+      <td class="darkgreen">
+        83
+        <h2>Bi</h2>
+        Bismuth
+      </td>
+      <td class="darkgreen">
+        84
+        <h2>Po</h2>
+        Polonium
+      </td>
+      <td class="darkgreen">
+        85
+        <h2>At</h2>
+        Astatine
+      </td>
+      <td class="darkred">
+        86
+        <h2>Rn</h2>
+        Radon
+      </td>
+    </tr>
+    <!--#################################-SEVENTH-ROW-###################################-->
+    <tr>
+      <td class="darkgreen">
+        87
+        <h2>Fr</h2>
+        Francium
+      </td>
+      <td class="darkred">
+        88
+        <h2>Ra</h2>
+        Radium
+      </td>
+      <td class="orange">
+        89
+        <h2>Ac</h2>
+        Actinium
+      </td>
+      <td class="purple">
+        104
+        <h2>Rf</h2>
+        Rutherfordium
+      </td>
+      <td class="purple">
+        105
+        <h2>Db</h2>
+        Dubnium
+      </td>
+      <td class="purple">
+        106
+        <h2>Sg</h2>
+        Seaborgium
+      </td>
+      <td class="purple">
+        107
+        <h2>Bh</h2>
+        Bohrium
+      </td>
+      <td class="purple">
+        108
+        <h2>Hs</h2>
+        Hassium
+      </td>
+      <td class="gray">
+        109
+        <h2>Mt</h2>
+        Meitnerium
+      </td>
+      <td class="gray">
+        110
+        <h2>Ds</h2>
+        Darmstadtium
+      </td>
+      <td class="gray">
+        111
+        <h2>Rg</h2>
+        Roentgenium
+      </td>
+      <td class="gray">
+        112
+        <h2>Cn</h2>
+        Copernicium
+      </td>
+      <td class="gray">
+        113
+        <h2>Nh</h2>
+        Nihonium
+      </td>
+      <td class="gray">
+        114
+        <h2>Fl</h2>
+        Flerovium
+      </td>
+      <td class="gray">
+        115
+        <h2>Mc</h2>
+        Moscovium
+      </td>
+      <td class="gray">
+        116
+        <h2>Lv</h2>
+        Livermorium
+      </td>
+      <td class="gray">
+        117
+        <h2>Ts</h2>
+        Tennessine
+      </td>
+      <td class="gray">
+        118
+        <h2>Og</h2>
+        Organesson
+      </td>
+    </tr>
+    <!--#################################-EIGHTH-ROW-###################################-->
+    <tr>
+      <td class="empty" class="larger" colspan="18">&nbsp; &nbsp; &nbsp;</td>
+    </tr>
+    <!--#################################-NINTH-ROW-###################################-->
+    <tr>
+      <td class="empty" rowspan="2" colspan="3"></td>
+      <td class="blue">
+        58
+        <h2>Ce</h2>
+        Cerium
+      </td>
+      <td class="blue">
+        59
+        <h2>Pr</h2>
+        Praseodymium
+      </td>
+      <td class="blue">
+        60
+        <h2>Nd</h2>
+        Neodymium
+      </td>
+      <td class="blue">
+        61
+        <h2>Pm</h2>
+        Promethium
+      </td>
+      <td class="blue">
+        62
+        <h2>Sm</h2>
+        Samarium
+      </td>
+      <td class="blue">
+        63
+        <h2>Eu</h2>
+        Europium
+      </td>
+      <td class="blue">
+        64
+        <h2>Gd</h2>
+        Gadolinium
+      </td>
+      <td class="blue">
+        65
+        <h2>Tb</h2>
+        Terbium
+      </td>
+      <td class="blue">
+        66
+        <h2>Dy</h2>
+        Dysprosium
+      </td>
+      <td class="blue">
+        67
+        <h2>Ho</h2>
+        Holmium
+      </td>
+      <td class="blue">
+        68
+        <h2>Er</h2>
+        Erbium
+      </td>
+      <td class="blue">
+        69
+        <h2>Tm</h2>
+        Thulium
+      </td>
+      <td class="blue">
+        70
+        <h2>Yb</h2>
+        Ytterbium
+      </td>
+      <td class="blue">
+        71
+        <h2>Lu</h2>
+        Lutetium
+      </td>
+      <td class="empty" rowspan="2"></td>
+    </tr>
+    <!--#################################-TENTH-ROW-###################################-->
+    <tr>
+      <td class="orange">
+        90
+        <h2>Th</h2>
+        Thorium
+      </td>
+      <td class="orange">
+        91
+        <h2>Pa</h2>
+        Protactinium
+      </td>
+      <td class="orange">
+        92
+        <h2>U</h2>
+        Uranium
+      </td>
+      <td class="orange">
+        93
+        <h2>Np</h2>
+        Neptunium
+      </td>
+      <td class="orange">
+        94
+        <h2>Pu</h2>
+        Plutonium
+      </td>
+      <td class="orange">
+        95
+        <h2>Am</h2>
+        Americium
+      </td>
+      <td class="orange">
+        96
+        <h2>Cm</h2>
+        Curium
+      </td>
+      <td class="orange">
+        97
+        <h2>Bk</h2>
+        Berkelium
+      </td>
+      <td class="orange">
+        98
+        <h2>Cf</h2>
+        Californium
+      </td>
+      <td class="orange">
+        99
+        <h2>Es</h2>
+        Einsteinium
+      </td>
+      <td class="orange">
+        100
+        <h2>Fm</h2>
+        Fermium
+      </td>
+      <td class="orange">
+        101
+        <h2>Md</h2>
+        Mendelevium
+      </td>
+      <td class="orange">
+        102
+        <h2>No</h2>
+        Nobelium
+      </td>
+      <td class="orange">
+        103
+        <h2>Lr</h2>
+        Lawrencium
+      </td>
+    </tr>
+  </table>
+</html>

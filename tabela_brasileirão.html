@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<style>
+  table {
+    border: 1px solid #dddd;
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+  }
+  .num0 {
+    color: #003366;
+    width: 35px;
+  }
+  .num1 {
+    color: #1398be;
+  }
+  .num2 {
+    color: #de9800;
+  }
+  .num3 {
+    color: #c91b04;
+  }
+  .num4 {
+    color: #cccccc;
+  }
+  .tit {
+    color: #999;
+  }
+  .bord {
+    border-bottom: 2px solid #dddd;
+  }
+  td {
+    border-bottom: 1px solid #dddd;
+    font-size: 14px;
+    font-size: 14px;
+    text-align: center;
+    height: 25px;
+  }
+  .pots {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    background-color: #f7f7f7;
+    width: 35px;
+  }
+  .fundo {
+    background-color: #f7f7f7;
+    width: 35px;
+    color: #666666;
+  }
+  .fundo1 {
+    width: 50px;
+    background-color: #f7f7f7;
+    color: #666666;
+  }
+  .time {
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    text-align: left;
+    width: 200px;
+  }
+  .tam {
+    width: 35px;
+    color: #666666;
+  }
+  .caixa1 {
+    width: 15px;
+    height: 15px;
+    background-color: #003366;
+  }
+  .caixa2 {
+    width: 15px;
+    height: 15px;
+    background-color: #1398be;
+  }
+  .caixa3 {
+    width: 15px;
+    height: 15px;
+    background-color: #de9800;
+  }
+  .caixa4 {
+    width: 15px;
+    height: 15px;
+    background-color: #c91b04;
+  }
+  .rdp {
+    color: #666666;
+    font-size: 9px;
+  }
+  .textoLegenda {
+    font-size: 9px;
+  }
+</style>
+
+<!--#####################################-CSS-HTML-SEPARATOR-##########################################-->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercício 5: Tabela Brasileirão</title>
+  </head>
+  <body>
+    <table align="center">
+      <tr align="center" class="tit">
+        <td colspan="2"></td>
+        <td>P</td>
+        <td>J</td>
+        <td>V</td>
+        <td>E</td>
+        <td>D</td>
+        <td>GP</td>
+        <td>GC</td>
+        <td>SG</td>
+        <td>%</td>
+      </tr>
+      <tr>
+        <td class="num0"><b>1</b></td>
+        <td class="time"><b>Corinthians</b></td>
+        <td class="pots"><b>17</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">5</td>
+        <td class="tam">2</td>
+        <td class="fundo">0</td>
+        <td class="tam">15</td>
+        <td class="fundo">8</td>
+        <td class="tam">7</td>
+        <td class="fundo1">81</td>
+      </tr>
+      <tr>
+        <td class="num0"><b>2</b></td>
+        <td class="time"><b>Ceará</b></td>
+        <td class="pots"><b>17</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">5</td>
+        <td class="tam">2</td>
+        <td class="fundo">0</td>
+        <td class="tam">7</td>
+        <td class="fundo">1</td>
+        <td class="tam">6</td>
+        <td class="fundo1">81</td>
+      </tr>
+      <tr>
+        <td class="num0"><b>3</b></td>
+        <td class="time"><b>Fluminense</b></td>
+        <td class="pots"><b>17</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">5</td>
+        <td class="tam">0</td>
+        <td class="fundo">2</td>
+        <td class="tam">11</td>
+        <td class="fundo">5</td>
+        <td class="tam">6</td>
+        <td class="fundo1">71,4</td>
+      </tr>
+      <tr class="bord">
+        <td class="num1"><b>4</b></td>
+        <td class="time"><b>Santos</b></td>
+        <td class="pots"><b>12</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">3</td>
+        <td class="tam">3</td>
+        <td class="fundo">1</td>
+        <td class="tam">15</td>
+        <td class="fundo">10</td>
+        <td class="tam">5</td>
+        <td class="fundo1">57.1</td>
+      </tr>
+      <tr>
+        <td class="num2"><b>5</b></td>
+        <td class="time"><b>São Paulo</b></td>
+        <td class="pots"><b>11</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">3</td>
+        <td class="tam">2</td>
+        <td class="fundo">2</td>
+        <td class="tam">9</td>
+        <td class="fundo">6</td>
+        <td class="tam">3</td>
+        <td class="fundo1">52.4</td>
+      </tr>
+      <tr>
+        <td class="num2"><b>6</b></td>
+        <td class="time"><b>Goiás</b></td>
+        <td class="pots"><b>10</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">3</td>
+        <td class="tam">1</td>
+        <td class="fundo">3</td>
+        <td class="tam">9</td>
+        <td class="fundo">10</td>
+        <td class="tam">-1</td>
+        <td class="fundo1">47.6</td>
+      </tr>
+      <tr>
+        <td class="num2"><b>7</b></td>
+        <td class="time"><b>Botafogo</b></td>
+        <td class="pots"><b>9</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">2</td>
+        <td class="tam">3</td>
+        <td class="fundo">2</td>
+        <td class="tam">13</td>
+        <td class="fundo">11</td>
+        <td class="tam">2</td>
+        <td class="fundo1">42.9</td>
+      </tr>
+      <tr>
+        <td class="num2"><b>8</b></td>
+        <td class="time"><b>Flamengo</b></td>
+        <td class="pots"><b>9</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">2</td>
+        <td class="tam">3</td>
+        <td class="fundo">2</td>
+        <td class="tam">9</td>
+        <td class="fundo">8</td>
+        <td class="tam">1</td>
+        <td class="fundo1">42.9</td>
+      </tr>
+      <tr>
+        <td class="num2"><b>9</b></td>
+        <td class="time"><b>Cruzeiro</b></td>
+        <td class="pots"><b>9</b></td>
+        <td class="tam">6</td>
+        <td class="fundo">2</td>
+        <td class="tam">3</td>
+        <td class="fundo">1</td>
+        <td class="tam">7</td>
+        <td class="fundo">6</td>
+        <td class="tam">1</td>
+        <td class="fundo1">50</td>
+      </tr>
+      <tr>
+        <td class="num2"><b>10</b></td>
+        <td class="time"><b>Guarani</b></td>
+        <td class="pots"><b>9</b></td>
+        <td class="tam">6</td>
+        <td class="fundo">2</td>
+        <td class="tam">3</td>
+        <td class="fundo">1</td>
+        <td class="tam">7</td>
+        <td class="fundo">7</td>
+        <td class="tam">0</td>
+        <td class="fundo1">50</td>
+      </tr>
+      <tr>
+        <td class="num2"><b>11</b></td>
+        <td class="time"><b>Palmeiras</b></td>
+        <td class="pots"><b>8</b></td>
+        <td class="tam">6</td>
+        <td class="fundo">2</td>
+        <td class="tam">2</td>
+        <td class="fundo">2</td>
+        <td class="tam">5</td>
+        <td class="fundo">4</td>
+        <td class="tam">1</td>
+        <td class="fundo1">44.4</td>
+      </tr>
+      <tr>
+        <td class="num2"><b>12</b></td>
+        <td class="time"><b>Grêmio</b></td>
+        <td class="pots"><b>8</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">2</td>
+        <td class="tam">2</td>
+        <td class="fundo">3</td>
+        <td class="tam">10</td>
+        <td class="fundo">11</td>
+        <td class="tam">-1</td>
+        <td class="fundo1">38.1</td>
+      </tr>
+      <tr>
+        <td class="num4"><b>13</b></td>
+        <td class="time"><b>Avaí</b></td>
+        <td class="pots"><b>8</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">2</td>
+        <td class="tam">2</td>
+        <td class="fundo">3</td>
+        <td class="tam">10</td>
+        <td class="fundo">11</td>
+        <td class="tam">-1</td>
+        <td class="fundo1">38.1</td>
+      </tr>
+      <tr>
+        <td class="num4"><b>14</b></td>
+        <td class="time"><b>Vitória</b></td>
+        <td class="pots"><b>8</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">2</td>
+        <td class="tam">2</td>
+        <td class="fundo">3</td>
+        <td class="tam">7</td>
+        <td class="fundo">8</td>
+        <td class="tam">-1</td>
+        <td class="fundo1">38.1</td>
+      </tr>
+      <tr>
+        <td class="num4"><b>15</b></td>
+        <td class="time"><b>Prudente</b></td>
+        <td class="pots"><b>8</b></td>
+        <td class="tam">6</td>
+        <td class="fundo">2</td>
+        <td class="tam">2</td>
+        <td class="fundo">2</td>
+        <td class="tam">9</td>
+        <td class="fundo">11</td>
+        <td class="tam">-2</td>
+        <td class="fundo1">44.4</td>
+      </tr>
+      <tr class="bord">
+        <td class="num4"><b>16</b></td>
+        <td class="time"><b>Atlético-PR</b></td>
+        <td class="pots"><b>7</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">2</td>
+        <td class="tam">1</td>
+        <td class="fundo">4</td>
+        <td class="tam">10</td>
+        <td class="fundo">15</td>
+        <td class="tam">-5</td>
+        <td class="fundo1">33.3</td>
+      </tr>
+      <tr>
+        <td class="num3"><b>17</b></td>
+        <td class="time"><b>Internacional</b></td>
+        <td class="pots"><b>6</b></td>
+        <td class="tam">6</td>
+        <td class="fundo">2</td>
+        <td class="tam">0</td>
+        <td class="fundo">4</td>
+        <td class="tam">10</td>
+        <td class="fundo">12</td>
+        <td class="tam">-2</td>
+        <td class="fundo1">33.3</td>
+      </tr>
+      <tr>
+        <td class="num3"><b>18</b></td>
+        <td class="time"><b>Atlético-MG</b></td>
+        <td class="pots"><b>6</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">2</td>
+        <td class="tam">0</td>
+        <td class="fundo">5</td>
+        <td class="tam">10</td>
+        <td class="fundo">16</td>
+        <td class="tam">-6</td>
+        <td class="fundo1">28.6</td>
+      </tr>
+      <tr>
+        <td class="num3"><b>19</b></td>
+        <td class="time"><b>Vasco</b></td>
+        <td class="pots"><b>5</b></td>
+        <td class="tam">7</td>
+        <td class="fundo">1</td>
+        <td class="tam">2</td>
+        <td class="fundo">4</td>
+        <td class="tam">5</td>
+        <td class="fundo">12</td>
+        <td class="tam">-7</td>
+        <td class="fundo1">23.8</td>
+      </tr>
+      <tr>
+        <td class="num3"><b>20</b></td>
+        <td class="time"><b>Atlético-GO</b></td>
+        <td class="pots"><b>1</b></td>
+        <td class="tam">6</td>
+        <td class="fundo">0</td>
+        <td class="tam">1</td>
+        <td class="fundo">5</td>
+        <td class="tam">3</td>
+        <td class="fundo">9</td>
+        <td class="tam">-6</td>
+        <td class="fundo1">5.6</td>
+      </tr>
+      <tr>
+        <td><div class="caixa1"></div></td>
+        <td class="textoLegenda" align="left">TAÇA LIBERTADORES</td>
+        <td><div class="caixa2"></div></td>
+        <td class="textoLegenda">PRÉ-LIBERTADORES</td>
+        <td><div class="caixa3"></div></td>
+        <td class="textoLegenda">SUL-AMERICANA</td>
+        <td><div class="caixa4"></div></td>
+        <td class="textoLegenda">REBAIXADOS</td>
+      </tr>
+      <tr>
+        <td class="rdp" colspan="11">
+          &nbsp;<b>P</b> pontos&nbsp; &nbsp;<b>J</b> jogos&nbsp; &nbsp;<b>V</b>
+          vitórias&nbsp; &nbsp;<b>E</b> empates&nbsp; &nbsp;<b>D</b>
+          derrotas&nbsp; &nbsp;<b>GP</b> gols pró&nbsp; &nbsp;<b>GC</b> gols
+          contra&nbsp; &nbsp;<b>SG</b> saldo de gols&nbsp; &nbsp;<b>(%)</b>
+          aproveitamento &nbsp;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
